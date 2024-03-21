@@ -1,0 +1,115 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
+    min-width:320px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  
+  
+  
+  .footer-seks{
+    background-color: #0C0C0C;
+    padding-top: 40px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+  }
+  .footer-soc{
+    display: block;
+  max-width: 122px;
+  }
+  .footer-zago{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+  }
+  .footer-spysok{
+    display: flex;
+    gap: 10px;
+  }
+  .footerlist{
+  
+  }
+  .footer-tel{
+    border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 16px;
+  width: 152px;
+  height: 44px;
+  }
+  .tel{
+    font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  }
+  .footer-zagolovok{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    }
+    
+  
+  .footer-Home-text{
+    font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #fbfbfb;
+  }
+  .Home-Pioneer{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33333;
+    color: #fbfbfb;
+  }
+  
+  
+    @media screen and (max-width:768px) {
+      .footer-zago{
+        font-size: 20px;
+      }
+      .tel{
+        font-size: 14px;
+        line-height: 1.28571em;
+      }
+      .footer-zagolovok{
+        line-height: 1.14286em;
+      }
+      .Home-Pioneer{
+        font-size: 14px;
+        line-height: 1.28571em;
+      }
+    }
