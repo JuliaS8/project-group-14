@@ -90,9 +90,10 @@ img {
   font-style: normal;
 }
 
-.body {
+body {
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
+  font-style: normal;
 
   color: #0c0c0c;
   background-color: #fbfbfb;
