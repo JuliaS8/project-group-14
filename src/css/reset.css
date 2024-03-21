@@ -98,10 +98,14 @@ img {
   background-color: #fbfbfb;
 }
 
+.section {
+  padding: 100px 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 375px;
-  padding: 0 16px;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 768px) {
