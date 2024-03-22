@@ -5,6 +5,7 @@
 @media screen and (min-width: 768px) {
     .about-us-container {
         padding: 0 32px;
+    
     }
 }
 @media screen  and (min-width: 1280px) {
@@ -25,15 +26,15 @@
 }
 @media screen and (min-width: 768px) {
     .paragraphs-section {
-        max-width: 704px;
-        padding: 80px 60px;
-        border-radius: 50px;
+    max-width: 704px;
+    padding: 80px 60px;
+    border-radius: 50px;
 
     }
 }
 @media screen and (min-width: 1280px) {
     .paragraphs-section {
-max-width: 580px;
+    max-width: 580px;
     }
 }
 .about-us-title {
@@ -82,20 +83,27 @@ max-width: 580px;
     text-align: center;
     color: #fbfbfb;
     margin-top: 40px;
+    padding-top: 15px;
 
 }
 .about-us-picture {
-box-shadow: rgba(12, 12, 12, 0.2);
+max-width: 335px;
+max-height: 446px;
 border-radius: 30px;
+overflow: hidden;
+
 }
 @media screen and (min-width: 768px) {
     .about-us-picture {
 border-radius: 50px;
+max-width: 704px;
+max-height: 512px;
     }
 }
 @media screen and (min-width: 1280px) {
 .about-us-picture {
     max-width: 530px;
+    max-height: 532px;
     
 }
 }
