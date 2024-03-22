@@ -1,3 +1,5 @@
+/*========== Виправлені стилі контейнера та секцій ===================*/
+
 @media screen and (max-width: 767px) {
   .container {
     padding: 0 20px;
@@ -29,6 +31,7 @@
     padding: 50px 0;
   }
 }
+/*========== Catalog style ===================*/
 
 .catalog-title {
   font-weight: 600;
@@ -104,10 +107,16 @@
   margin-bottom: 8px;
 }
 
+/*========== Властивість для обмеження по кількості відображення рядків текста ===================*/
+
 @media screen and (min-width: 768px) {
   .catalog-subtitle {
     font-size: 20px;
     line-height: 1;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 
