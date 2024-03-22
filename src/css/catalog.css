@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.section-catalog {
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+  .section-catalog {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 65px;
+  }
+  .section-catalog {
+    padding: 50px 0;
+  }
+}
