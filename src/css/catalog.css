@@ -25,3 +25,33 @@
     padding: 50px 0;
   }
 }
+
+.catalog-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-title {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .catalog-list {
+    column-gap: 23px;
+  }
+}
