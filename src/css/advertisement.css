@@ -121,17 +121,15 @@
 }
 
 .advertisement-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   max-width: 160px;
   height: 48px;
+  padding: 15px 43px;
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   color: #fbfbfb;
   margin-top: 43px;
 }
