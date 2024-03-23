@@ -69,7 +69,7 @@
 .input-section textarea:is(:hover, :focus) {
   border: 1px solid rgba(51, 80, 233, 1);
 }
-.container button {
+.send-button {
   width: 134px;
   height: 42px;
   padding: 12px 50px;
@@ -116,7 +116,7 @@
   .input-section textarea {
     margin-bottom: 32px;
   }
-  .container button {
+  .send-button {
     height: 52px;
     width: 160px;
   }
