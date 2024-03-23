@@ -40,3 +40,54 @@
   clip-path: inset(100%);
   margin: -1px;
 }
+
+.section-advertisement {
+  background: #0c0c0c;
+  max-width: 335px;
+  border-radius: 30px;
+  padding: 60px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('/img/advertisement/adv-mob.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-advertisement {
+    background-image: url('/img/advertisement/adv-mob@2x.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-advertisement {
+    max-width: 704px;
+    padding: 80px 0;
+    background-image: url('/img/advertisement/adv-tab.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-advertisement {
+    background-image: url('/img/advertisement/adv-tab@2x.png');
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-advertisement {
+    max-width: 1150px;
+    padding: 83px 0;
+    background-image: url('/img/advertisement/adv-desk.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-advertisement {
+    background-image: url('/img/advertisement/adv-desk@2x.png');
+  }
+}
