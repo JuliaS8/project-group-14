@@ -1,0 +1,163 @@
+.contact-title h2 {
+  display: flex;
+  font-family: Gilroy;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.content--direction {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-us-section {
+  background: #f3f3f3;
+  border-radius: 30px;
+  padding: 48px 28px;
+}
+.contact-us-section p {
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 28px;
+  color: rgba(12, 12, 12, 0.7);
+}
+.contact-us-section h2 {
+  padding-left: 20px;
+  padding-bottom: 24px;
+}
+.contact-form input {
+  margin-bottom: 18px;
+}
+.input-section {
+  position: relative;
+}
+.input-section textarea {
+  margin-bottom: 28px;
+}
+.input-section input,
+.input-section textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 42px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  resize: none; /* делаем так чтоб окошко было фиксировнным*/
+  outline: none;
+}
+/* настройки текста внутри инпутов */
+.input-section input::placeholder,
+.input-section textarea::placeholder {
+  color: #0c0c0c;
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.input-section textarea {
+  height: 84px;
+}
+/* делаем настройки бордера для полей инпута */
+.input-section input:is(:hover, :focus),
+.input-section textarea:is(:hover, :focus) {
+  border: 1px solid rgba(51, 80, 233, 1);
+}
+.container button {
+  width: 134px;
+  height: 42px;
+  padding: 12px 50px;
+  gap: 10px;
+  border-radius: 16px;
+  border: none;
+  background: #3350e9;
+  color: white;
+  cursor: pointer;
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+}
+/* делаем цвет по ховеру */
+.container button:hover {
+  background-color: #1f3cd4;
+}
+.contact-form-photo {
+  display: flex;
+}
+
+/* донастройки для мобилки */
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+/* настройки для планшета */
+@media only screen and (min-width: 768px) {
+  .contact-title h2 {
+    font-size: 48px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+  .content--direction {
+    gap: 40px;
+  }
+  .contact-us-section {
+    padding: 50px 122px;
+  }
+  .input-section textarea {
+    margin-bottom: 32px;
+  }
+  .container button {
+    height: 52px;
+    width: 160px;
+  }
+  .contact-us-section p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+
+  .input-section input::placeholder,
+  .input-section textarea::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .watch--white {
+    display: flex;
+    width: 728px;
+  }
+}
+/* тут настройки для декстопа */
+@media only screen and (min-width: 1280px) {
+  .contact-title h2 {
+    font-size: 48px;
+    line-height: 44px;
+  }
+  .content--direction {
+    flex-direction: row;
+  }
+  .contact-form-photo {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 530px;
+    height: 556px;
+    margin-top: 0;
+  }
+  .contact-us-section {
+    width: 580px;
+    height: 556px;
+    padding: 50px 60px;
+  }
+  .watch--white {
+    width: auto;
+  }
+}
