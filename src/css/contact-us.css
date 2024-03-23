@@ -1,10 +1,6 @@
-.contact-container img {
-  max-width: initial;
-}
-.contact-container {
-  max-width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
+.container {
+  max-width: 375px;
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -16,37 +12,40 @@
   line-height: 32px;
   letter-spacing: -0.02em;
   text-align: left;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 .content--direction {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
-.contact-section {
+.contact-us-section {
   background: #f3f3f3;
   border-radius: 30px;
   padding: 48px 28px;
 }
-.contact-section p {
+.contact-us-section p {
   font-family: 'Gilroy';
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.02em;
   text-align: left;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
+  color: rgba(12, 12, 12, 0.7);
 }
-.contact-section h2 {
+.contact-us-section h2 {
   padding-left: 20px;
   padding-bottom: 24px;
 }
-.input-section {
-  position: relative;
+.contact-form input {
   margin-bottom: 18px;
 }
-.watch--white {
-  display: block;
-  height: 512px;
+.input-section {
+  position: relative;
+}
+.input-section textarea {
+  margin-bottom: 28px;
 }
 .input-section input,
 .input-section textarea {
@@ -56,9 +55,10 @@
   padding: 12px 14px;
   border-radius: 12px;
   border: 1px solid rgba(12, 12, 12, 0.15);
-  resize: none;
+  resize: none; /* делаем так чтоб окошко было фиксировнным*/
   outline: none;
 }
+/* настройки текста внутри инпутов */
 .input-section input::placeholder,
 .input-section textarea::placeholder {
   color: #0c0c0c;
@@ -70,15 +70,15 @@
 .input-section textarea {
   height: 84px;
 }
+/* делаем настройки бордера для полей инпута */
 .input-section input:is(:hover, :focus),
 .input-section textarea:is(:hover, :focus) {
   border: 1px solid rgba(51, 80, 233, 1);
 }
-.contact-container button {
+.container button {
   width: 134px;
   height: 42px;
   padding: 12px 50px;
-  margin: 0;
   gap: 10px;
   border-radius: 16px;
   border: none;
@@ -91,91 +91,86 @@
   line-height: 18px;
   text-align: center;
 }
-
-.contact-container button:hover {
+/* делаем цвет по ховеру */
+.container button:hover {
   background-color: #1f3cd4;
 }
 .contact-form-photo {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 20px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 30px;
-  height: 512px;
 }
-.watch--white {
-  position: absolute;
-  left: -300px;
-  height: 100%;
-}
+
+/* донастройки для мобилки */
 @media only screen and (max-width: 767px) {
   h2 {
     font-size: 32px;
     line-height: 32px;
   }
 }
+/* настройки для планшета */
 @media only screen and (min-width: 768px) {
   .contact-title h2 {
     font-size: 48px;
     line-height: 44px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
-  .contact-container {
+  .container {
     max-width: 768px;
   }
-  .contact-section {
+  .content--direction {
+    gap: 40px;
+  }
+  .contact-us-section {
     padding: 50px 122px;
   }
-
-  .watch--white {
-    left: -110px;
+  .input-section textarea {
+    margin-bottom: 32px;
   }
-  .contact-form-photo {
-    height: 556px;
-  }
-  .contact-container button {
-    margin-top: 12px;
+  .container button {
     height: 52px;
     width: 160px;
   }
-  .contact-section p {
+  .contact-us-section p {
     font-size: 16px;
     line-height: 20px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
+
   .input-section input::placeholder,
   .input-section textarea::placeholder {
     font-size: 16px;
     line-height: 20px;
   }
-  .contact-form-photo {
-    margin-top: 40px;
+  .watch--white {
+    display: flex;
+    width: 728px;
   }
 }
-@media only screen and (min-width: 1158px) {
+/* тут настройки для декстопа */
+@media only screen and (min-width: 1280px) {
   .contact-title h2 {
     font-size: 48px;
     line-height: 44px;
   }
-  .contact-container {
+  .container {
     max-width: 1280px;
     padding: 0 65px;
   }
   .content--direction {
     flex-direction: row;
   }
-  .watch--white {
-    left: 50%;
-    transform: translateX(-50%);
-  }
   .contact-form-photo {
-    max-width: 530px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 530px;
+    height: 556px;
     margin-top: 0;
-    margin-left: 40px;
   }
-  .contact-section {
+  .contact-us-section {
+    width: 580px;
+    height: 556px;
     padding: 50px 60px;
+  }
+  .watch--white {
+    width: auto;
   }
 }
