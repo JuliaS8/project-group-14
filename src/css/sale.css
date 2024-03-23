@@ -1,12 +1,3 @@
-
-/* Секція */
-.sale-section{
-    max-width: 375px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-/* /Секція */
-
 /* Заголовок */
 .sale-title{
     font-weight: 600;
@@ -153,13 +144,6 @@
 
 /* Планшетка версія */
 @media screen and (min-width: 768px) {
-    /* Секція */
-    .sale-section {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-    /* /Секція */
-
     /* Заголовок */
     .sale-title {
         font-size: 48px;
@@ -246,13 +230,6 @@
 
 /* Десктопна версія */
 @media screen and (min-width: 1280px) {
-    /* Секція */
-    .sale-section {
-        max-width: 1280px;
-        padding: 0 65px;
-    }
-    /* /Секція */
-
     /* Годиники */
     .clock-conatiner {
         margin-bottom: 0;
