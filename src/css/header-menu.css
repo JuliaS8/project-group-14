@@ -88,7 +88,7 @@ header {
 
   .nav .nav-list {
     display: inline-flex;
-    gap: 24px;
+    gap: 40px;
   }
   .logo {
     padding-top: 32px;
