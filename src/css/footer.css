@@ -76,7 +76,7 @@ opacity: 1;
   color: #fbfbfb;
 }
 .footer-div-title{
-  margin: 0 auto;
+  margin: auto;
 }
 .footer-title{
   font-family: "Gilroy", sans-serif;
@@ -86,6 +86,7 @@ opacity: 1;
   letter-spacing: -0.02px;
   text-align: center;
   color: #fbfbfb;
+  margin: auto;
   }
   
 /*----------------container-two------------*/
