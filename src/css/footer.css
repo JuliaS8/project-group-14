@@ -1,7 +1,5 @@
 
-.footer-section{
-  max-width: 375px;
-}
+
 .footer-container{
   border-radius: 30px;
   Border:1px, 0px, 0px, 0px;
@@ -12,7 +10,6 @@
 .footer_container-one{
   margin-bottom: 92px;
 }
-
 .footer-soc{
   display: block;
 max-width: 122px;
@@ -38,8 +35,6 @@ margin-bottom: 20px;
   border-radius: 10px;
   width: 34px;
   height: 34px;
- 
-
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .footer-soc-svg{
@@ -102,7 +97,6 @@ display: block;
   max-width: 147px;
   width: 100%;
 }
-
 .footer-Home-spysok{
   display: flex;
   flex-wrap: wrap;
@@ -116,23 +110,18 @@ line-height: 16px;
 text-align: center;
 color: #fbfbfb;
 }
-
 .footer-Home-Pioneer{
   margin-left: auto;
   max-width: 83px;
   display: block;
 }
-
 .Home-Pioneer{
 font-family: "Gilroy", sans-serif;
 font-weight: 500;
 font-size: 12px;
 line-height: 16px;
 color: #fbfbfb;
-
 }
-
-
 .footer-last-text{
   font-family: var(--font-family);
 font-weight: 500;
@@ -141,9 +130,7 @@ line-height: 14px;
 letter-spacing: -0.02px;
 color: rgba(251, 251, 251, 0.5);
 fill: #FBFBFB80;
-
 }
-
 .ooter-navigation-poz{
  display: block;
 }
@@ -157,31 +144,23 @@ fill: #FBFBFB80;
   opacity: 0.9;
   fill: #FBFBFB80;
 }
-
 .footer-last-spysok{
   margin-top: 8px;
   display: flex;
   gap: 20px;
 }
-
-
-
 .footer-footer{
   margin-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
   @media screen and (min-width:768px) {
     .footer-footer{
       margin-bottom: 28px;
     }
 
-    .footer-section{
-      max-width: 768px;
-    }
     .footer-container{
       padding: 40px 40px 28px 40px;
-      max-width: 768px;
+      max-width: 704px;
     }
     .footer_container-one{
       display: flex;
@@ -228,7 +207,6 @@ fill: #FBFBFB80;
     .tel{
         font-size: 14px;
         line-height: 18px;
-
     }
     .footer-div-title{
     margin: auto;
@@ -276,24 +254,19 @@ fill: #FBFBFB80;
       margin-top: 0px;
       gap: 20px;
     }
-
     .footer-div-footer{
       display: flex;
     }
-  
-   
-   
   }
-  
+
+
   @media screen and (min-width:1280px) {
-    .footer-section{
-      max-width: 1280px;
-    }
+
     .footer-container{
-      max-width: 1280px;
+      max-width: 1280px
     }
     .footer_container-one{
-      margin-bottom: 126px;
+      max-width: 1280px
     }
  
   
@@ -314,6 +287,26 @@ fill: #FBFBFB80;
     }
   }
 
+/*------------container----------*/
 
 
 
+.container-footer{
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 0 20px;
+}
+@media screen and (min-width:768px) {
+  .container-footer{
+    max-width: 704px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .container-footer{
+      max-width: 1280px;
+      padding: 0 32px;
+    
+  }
+}
