@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 1280px) {
   .catalog-item {
-    max-width: 368px;
+    width: calc((100% - 46px) / 3);
   }
 }
 
