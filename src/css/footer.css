@@ -18,6 +18,9 @@
 max-width: 122px;
 margin-bottom: 20px;
 }
+.footer-logo-boxs{
+  margin-bottom: 20px;
+}
 .footer-logo{
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
@@ -25,7 +28,6 @@ margin-bottom: 20px;
   line-height: 19.41px;
   letter-spacing: -0.02px;
   color: #fbfbfb;
-  margin-bottom: 20px;
 }
 .footer-socials{
   display: flex;
@@ -120,7 +122,6 @@ color: #fbfbfb;
   margin-left: auto;
   max-width: 83px;
   display: block;
-  margin-top: auto;
 }
 
 .Home-Pioneer{
@@ -231,12 +232,12 @@ fill: #FBFBFB80;
 
     }
     .footer-div-title{
-    margin: 0 50px;
+    margin: auto;
     }
     .footer-title{
       font-size: 28px;
       line-height: 32px;
-      width: 524px;
+      width: 534px;
     }
 /*----------------container-two------------*/
     .footer-positiong{
