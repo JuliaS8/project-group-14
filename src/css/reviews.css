@@ -65,7 +65,7 @@
   }
 
   .reviews-item {
-    min-width: 344px;
+    width: calc((100% - 16px) / 2);
   }
 
   .description-reviews-title {
@@ -80,7 +80,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .reviews-list {
+    gap: 20px;
+  }
+
   .reviews-item {
-    max-width: 100%;
+    width: calc((100% - 40px) / 3);
   }
 }
