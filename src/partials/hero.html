@@ -1,0 +1,83 @@
+<section id="hero" class="section hero-section">
+  <div class="container">
+    <div class="text-scroll-thumb">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Welcome to our <span class="hero-title-span">collection</span> of
+          premium watches
+        </h1>
+        <p class="hero-paragraph">
+          Our watches are not just timepieces, but also an expression of your
+          personality and lifestyle. From classic designs to modern ones, we
+          have a watch to suit every taste and occasion.
+        </p>
+      </div>
+      <div class="hero-photo-scroll-thumb">
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/hero/hero-desktop/hero-desktop-users-photo.png    1x,
+              ./img/hero/hero-desktop/hero-desktop-users-photo@2x.png 2x
+            "
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/hero/hero-tablet/hero-tablet-users-photo.png    1x,
+              ./img/hero/hero-tablet/hero-tablet-users-photo@2x.png 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/hero/hero-mobile/hero-mobile-users-photo.png    1x,
+              ./img/hero/hero-mobile/hero-mobile-users-photo@2x.png 2x
+            "
+          />
+          <img
+            src="./img/hero/hero-mobile/hero-mobile-users-photo.png "
+            alt="users"
+          />
+        </picture>
+        <a href="#footer" class="hero-scroll">Scroll down</a>
+      </div>
+    </div>
+    <div class="hero-main-photo">
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/hero/hero-desktop/hero-photo-desktop.png    1x,
+            ./img/hero/hero-desktop/hero-photo-desktop@2x.png 2x
+          "
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero/hero-tablet/hero-photo-tablet.png    1x,
+            ./img/hero/hero-tablet/hero-photo-tablet@2x.png 2x
+          "
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/hero/hero-mobile/hero-photo-mobile.png    1x,
+            ./img/hero/hero-mobile/hero-photo-mobile@2x.png 2x
+          "
+        />
+        <img
+          class="hero-main-img"
+          src="./img/hero/hero-mobile/hero-photo-mobile.png"
+          alt="main-photo"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
