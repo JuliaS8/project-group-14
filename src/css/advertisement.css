@@ -1,0 +1,121 @@
+/*========== Advertisement style ===================*/
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+.section-advertisement {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advertisement-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 60px 28px;
+  border-radius: 30px;
+  background: #0c0c0c;
+  background-image: url('/img/advertisement/adv-mob.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advertisement-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.advertisement-text-color {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  height: 48px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advertisement-link:is(:hover, :focus) {
+  color: #030303;
+  background-color: #fbfbfb;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .advertisement-container {
+    background-image: url('/img/advertisement/adv-mob@2x.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement-container {
+    padding: 80px 64px;
+    gap: 32px;
+    background-image: url('/img/advertisement/adv-tab.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .advertisement-container {
+      background-image: url('/img/advertisement/adv-tab@2x.png');
+    }
+  }
+
+  .advertisement-text {
+    font-size: 48px;
+    line-height: 0.92;
+    max-width: 690px;
+  }
+
+  .section-advertisement {
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertisement-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 83px 80px;
+    background-image: url('/img/advertisement/adv-desk.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .advertisement-container {
+      background-image: url('/img/advertisement/adv-desk@2x.png');
+    }
+  }
+
+  .section-advertisement {
+    max-width: 1150px;
+  }
+}
