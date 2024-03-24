@@ -1,21 +1,5 @@
 /*========== Advertisement style ===================*/
 
-@media screen and (max-width: 767px) {
-  .advertisement-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 28px;
-    padding: 60px 28px;
-    border-radius: 30px;
-    background: #0c0c0c;
-    background-image: url('/img/advertisement/adv-mob.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -28,52 +12,24 @@
   clip-path: inset(100%);
   margin: -1px;
 }
-
 .section-advertisement {
   max-width: 335px;
-
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .advertisement-container {
-    background-image: url('/img/advertisement/adv-mob@2x.png');
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advertisement-container {
-    max-width: 704px;
-    padding-top: 80px;
-    background-image: url('/img/advertisement/adv-tab.png');
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .advertisement-container {
-      background-image: url('/img/advertisement/adv-tab@2x.png');
-    }
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advertisement-container {
-    max-width: 1150px;
-    padding-top: 83px;
-    background-image: url('/img/advertisement/adv-desk.png');
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .advertisement-container {
-      background-image: url('/img/advertisement/adv-desk@2x.png');
-    }
-  }
+.advertisement-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 60px 28px;
+  border-radius: 30px;
+  background: #0c0c0c;
+  background-image: url('/img/advertisement/adv-mob.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advertisement-text {
@@ -101,12 +57,27 @@
   color: #fbfbfb;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .advertisement-container {
+    background-image: url('/img/advertisement/adv-mob@2x.png');
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advertisement-container {
-    padding: 0 64px;
+    padding: 80px 64px;
+    gap: 32px;
+    background-image: url('/img/advertisement/adv-tab.png');
   }
-  .section-advertisement {
-    padding: 40px 0;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .advertisement-container {
+      background-image: url('/img/advertisement/adv-tab@2x.png');
+    }
   }
 
   .advertisement-text {
@@ -114,19 +85,29 @@
     line-height: 0.92;
     max-width: 690px;
   }
+
+  .section-advertisement {
+    max-width: 704px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .advertisement-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 80px;
-  }
-  .section-advertisement {
-    padding: 50px 0;
+    padding: 83px 80px;
+    background-image: url('/img/advertisement/adv-desk.png');
   }
 
-  .advertisement-link {
-    margin-top: 32px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .advertisement-container {
+      background-image: url('/img/advertisement/adv-desk@2x.png');
+    }
+  }
+
+  .section-advertisement {
+    max-width: 1150px;
   }
 }
