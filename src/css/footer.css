@@ -49,10 +49,9 @@ margin-bottom: 20px;
   justify-content: center;
   align-items: center;
 }
-.footer-soc-svg:focus{
-color: #b81093 ;
-opacity: 1;
-}
+.footer-soc-svg:is(:hover, :focus){
+  opacity: 1;
+  }
 .footer-svg{
   fill: #fbfbfb;
   width:18px; 
