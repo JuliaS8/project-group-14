@@ -45,10 +45,11 @@
 }
 
 .advertisement-link {
-  display: block;
-  max-width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
   height: 48px;
-  padding: 15px 43px;
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
   font-weight: 500;
