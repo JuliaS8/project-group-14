@@ -65,7 +65,7 @@
   }
 
   .reviews-item {
-    width: calc((100% - 16px) / 2);
+    min-width: calc((100% - 16px) / 2);
   }
 
   .description-reviews-title {
@@ -85,6 +85,6 @@
   }
 
   .reviews-item {
-    width: calc((100% - 40px) / 3);
+    min-width: calc((100% - 40px) / 3);
   }
 }
