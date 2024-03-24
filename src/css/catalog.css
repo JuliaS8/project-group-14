@@ -49,7 +49,7 @@
 }
 @media screen and (min-width: 768px) {
   .catalog-item {
-    width: calc((100% - 16px) / 2);
+    min-width: calc((100% - 16px) / 2);
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 1280px) {
   .catalog-item {
-    width: calc((100% - 46px) / 3);
+    min-width: calc((100% - 46px) / 3);
   }
 }
 
