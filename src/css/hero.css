@@ -1,10 +1,12 @@
-.section.hero-section{
+.hero-section{
     padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-    .section.hero-section {
+    .hero-section {
         padding-top: 80px;
+        padding-bottom: 40px;
     }
 }
 
