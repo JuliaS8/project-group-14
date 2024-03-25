@@ -36,6 +36,8 @@
   max-width: 335px;
   background-color: #f3f3f3;
   padding: 24px 28px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 @media screen and (max-width: 767px) {
@@ -58,6 +60,12 @@
 @media screen and (min-width: 1280px) {
   .catalog-item {
     min-width: calc((100% - 46px) / 3);
+    box-shadow: none;
+  }
+
+  .catalog-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 }
 
