@@ -77,6 +77,10 @@ header {
   }
 }
 @media screen and (min-width: 1280px) {
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .header-container {
     justify-content: start;
   }
@@ -93,8 +97,8 @@ header {
     gap: 40px;
   }
   .logo {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     margin-right: 203px;
   }
   .nav-link {
@@ -103,8 +107,13 @@ header {
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-link:is(:hover, :focus) {
+    transform: scale(1.2);
+    text-decoration: underline;
   }
   .nav-active {
     position: relative;
@@ -151,6 +160,7 @@ header {
   right: 0;
   position: fixed;
   display: flex;
+  gap: 50px;
   margin: 0;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -212,6 +222,7 @@ header {
   text-align: center;
   color: #fbfbfb;
 }
+
 .menu-social-list {
   display: flex;
   gap: 10px;
