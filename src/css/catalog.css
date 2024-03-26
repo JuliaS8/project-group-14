@@ -96,25 +96,29 @@
 }
 
 @media screen and (max-width: 767px) {
-  .catalog-item {
+  .card-catalog {
     margin-bottom: 20px;
   }
 
-  .catalog-item:nth-child(4) {
+  .card-catalog:nth-child(4) {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
-  .catalog-item {
+  .card-catalog {
     min-width: calc((100% - 16px) / 2);
+  }
+  .catalog-item {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .catalog-item {
+  .card-catalog {
     min-width: calc((100% - 46px) / 3);
+  }
+  .catalog-item {
     box-shadow: none;
   }
 
