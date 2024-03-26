@@ -21,7 +21,13 @@
         </li>
       </ul>
     </nav>
-    <button data-menu-open type="button" class="btn-menu">
+    <button
+      data-menu-open
+      type="button"
+      class="btn-menu js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="menu-icon" width="34" height="34">
         <use href="./img/icons.svg#menu-icon"></use>
       </svg>
@@ -61,13 +67,10 @@
         </a>
       </li>
     </ul>
-    <!-- <svg class="under-line" width="" height="">
-      <use href="../img/icons.svg"></use>
-    </svg> -->
   </div>
 </header>
-<div data-menu class="menu">
-  <button data-menu-close type="button" class="btn-close">
+<div data-menu class="menu js-menu-container" id="mobile-menu">
+  <button data-menu-close type="button" class="btn-close js-close-menu">
     <svg class="close-icon" width="34" height="34">
       <use href="./img/icons.svg#close-icon"></use>
     </svg>
