@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var sections = document.querySelectorAll('section');
-  var navLinks = document.querySelectorAll('nav a');
+  var navLinks = document.querySelectorAll('nav ul a');
 
   function setActiveLink() {
     var fromTop = window.scrollY + 90; 
@@ -21,25 +21,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('scroll', setActiveLink);
 });
-const navbar =
-    document.querySelector(".navbar");
 
+const navbar = document.querySelector(".navbar");
 let lastScrollTop = 0;
 
 window.addEventListener(
-"scroll",
+    "scroll",
     () => {
-        console.log("scroll");
-        var { scrollY } = window;
-        if (scrollY > lastScrollTop) {
-            // downward scroll
+        var scrollY = window.scrollY || window.pageYOffset;
+        if (scrollY > lastScrollTop && scrollY > 732) {
+            // downward scroll beyond 732px
             navbar.classList.remove("visible");
-        } else if (scrollY < lastScrollTop) {
-            // upward scroll
+        } else if (scrollY < lastScrollTop || scrollY <= 732) {
             navbar.classList.add("visible");
-        } // else was horizontal scroll
-        lastScrollTop =
-            scrollY <= 0 ? 0 : scrollY;
+        }
+        lastScrollTop = scrollY <= 0 ? 0 : scrollY;
     },
-{passive: true }
-) ;
+    { passive: true }
+);

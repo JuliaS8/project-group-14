@@ -4,7 +4,7 @@
       <h2>Contact Us</h2>
     </div>
     <div class="content--direction">
-      <div class="contact-us-section">
+      <div data-aos="fade-right" class="contact-us-section">
         <form class="contact-form">
           <p>
             Please use the form below to contact us. Enter your name, email,
@@ -16,6 +16,8 @@
               id="name"
               name="name"
               placeholder="Name"
+              aria-label="user-name"
+              pattern="[A-Za-z ]{1,32}"
               required
             />
           </div>
@@ -25,16 +27,20 @@
               id="email"
               name="email"
               placeholder="Email"
+              aria-label="user-email"
               required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
           </div>
           <div class="input-section">
             <input
-              type="text"
+              type="tel"
               id="number"
               name="number"
               placeholder="+380"
+              aria-label="user-number"
               required
+              pattern="[+380][0-9]{12}"
             />
           </div>
           <div class="input-section">
@@ -47,7 +53,7 @@
           </div>
         </form>
       </div>
-      <div class="contact-form-photo">
+      <div data-aos="fade-left" class="contact-form-photo">
         <picture>
           <!-- настройки для декстопа -->
           <source
@@ -77,8 +83,8 @@
           <img
             class="watch--white"
             src="./src/img/contact-img/tablet-watch.jpg"
-            alt="Taxi Service"
-            width="100%"
+            alt="White Watch stay at rock"
+            width="335"
           />
         </picture>
         <!-- <img
