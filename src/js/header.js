@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var sections = document.querySelectorAll('section');
-  var navLinks = document.querySelectorAll('nav a');
+  var navLinks = document.querySelectorAll('nav ul a');
 
   function setActiveLink() {
     var fromTop = window.scrollY + 90; 
