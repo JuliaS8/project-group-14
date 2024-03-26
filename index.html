@@ -835,6 +835,8 @@
               id="name"
               name="name"
               placeholder="Name"
+              aria-label="user-name"
+              pattern="[A-Za-z ]{1,32}"
               required
             />
           </div>
@@ -844,16 +846,20 @@
               id="email"
               name="email"
               placeholder="Email"
+              aria-label="user-email"
               required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
           </div>
           <div class="input-section">
             <input
-              type="text"
+              type="tel"
               id="number"
               name="number"
               placeholder="+380"
+              aria-label="user-number"
               required
+              pattern="[+380][0-9]{12}"
             />
           </div>
           <div class="input-section">
