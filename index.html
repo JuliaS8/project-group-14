@@ -16,11 +16,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <title>WatchCharm</title>
     
     <script type="module" crossorigin src="/project-group-14/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-14/assets/index-c100d28b.css">
+    <link rel="stylesheet" href="/project-group-14/assets/index-9d99b837.css">
   </head>
 
   <body>
@@ -47,7 +48,13 @@
         </li>
       </ul>
     </nav>
-    <button data-menu-open type="button" class="btn-menu">
+    <button
+      data-menu-open
+      type="button"
+      class="btn-menu js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="menu-icon" width="34" height="34">
         <use href="/project-group-14/assets/icons-aae868d2.svg#menu-icon"></use>
       </svg>
@@ -87,13 +94,10 @@
         </a>
       </li>
     </ul>
-    <!-- <svg class="under-line" width="" height="">
-      <use href="../img/icons.svg"></use>
-    </svg> -->
   </div>
 </header>
-<div data-menu class="menu">
-  <button data-menu-close type="button" class="btn-close">
+<div data-menu class="menu js-menu-container" id="mobile-menu">
+  <button data-menu-close type="button" class="btn-close js-close-menu">
     <svg class="close-icon" width="34" height="34">
       <use href="/project-group-14/assets/icons-aae868d2.svg#close-icon"></use>
     </svg>
@@ -227,35 +231,43 @@
 
 
       <section class="about-us-section section" id="about-us">
-    <div class="about-us-container container">
-        <div class="paragraphs-section">
-            <h2 class="about-us-title">
-                About Us
-            </h2>
-            <p class="about-us-text text-p1">
-                Welcome to our premium watch collection, where luxury and style meet functionality and precision. Our selection of
-                timepieces embodies the very best in Swiss craftsmanship and engineering, ensuring that you'll always have a reliable
-                and stylish accessory on your wrist.
-            </p>
-            <p class="about-us-text text-p2">
-                At our premium watch collection, we believe that a watch is more than just a timekeeping device – it's a statement piece
-                that reflects your personality and style. So why settle for anything less than the best?
-            </p>
-            <a class="about-us-link" href="#catalog">
-            View catalog
-            </a>
-        
-        </div>
+  <div class="about-us-container container">
+    <div class="paragraphs-section">
+      <h2 class="about-us-title">About Us</h2>
+      <p class="about-us-text text-p1">
+        Welcome to our premium watch collection, where luxury and style meet
+        functionality and precision. Our selection of timepieces embodies the
+        very best in Swiss craftsmanship and engineering, ensuring that you'll
+        always have a reliable and stylish accessory on your wrist.
+      </p>
+      <p class="about-us-text text-p2">
+        At our premium watch collection, we believe that a watch is more than
+        just a timekeeping device – it's a statement piece that reflects your
+        personality and style. So why settle for anything less than the best?
+      </p>
+      <a class="about-us-link" href="#catalog"> View catalog </a>
+    </div>
     <div class="about-us-picture">
-        <picture>
-            <source srcset="/project-group-14/assets/rectangle-desktop@1x-21034219.jpg 1x, /project-group-14/assets/rectangle-desktop@2x-6043b4e4.jpg 2x" media="(min-width: 1280px)" />
-            <source srcset="/project-group-14/assets/rectangle-tablet@1x-18c61a4f.jpg 1x, /project-group-14/assets/rectangle-tablet@2x-aab32230.jpg 2x" media="(min-width: 768px)" />
-            <source srcset="/project-group-14/assets/rectangle-phone@1x-3cefc40a.jpg 1x, /project-group-14/assets/rectangle-phone@2x-01c12011.jpg 2x" media="(min-width: 375px)" />
-        <img src="/project-group-14/assets/rectangle-desktop@1x-21034219.jpg" alt="rectangle photo" />
-        </picture>
+      <picture>
+        <source
+          srcset="/project-group-14/assets/rectangle-desktop@1x-21034219.jpg 1x, /project-group-14/assets/rectangle-desktop@2x-6043b4e4.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/project-group-14/assets/rectangle-tablet@1x-18c61a4f.jpg 1x, /project-group-14/assets/rectangle-tablet@2x-aab32230.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/project-group-14/assets/rectangle-phone@1x-3cefc40a.jpg 1x, /project-group-14/assets/rectangle-phone@2x-01c12011.jpg 2x"
+          media="(min-width: 375px)"
+        />
+        <img
+          src="/project-group-14/assets/rectangle-desktop@1x-21034219.jpg"
+          alt="rectangle photo"
+        />
+      </picture>
     </div>
-    </div>
-    
+  </div>
 </section>
 
 
@@ -856,5 +868,15 @@
   </div>
 </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
