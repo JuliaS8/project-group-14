@@ -58,8 +58,33 @@
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   max-width: 335px;
-  background-color: #f3f3f3;
+  background-color: #3350e9;
   transform: rotateY(180deg);
+  padding: 32px 24px;
+}
+
+.card-back-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.card-back-first-text {
+  text-decoration: underline;
+  color: #fbfbfb;
+}
+.card-back-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+
+  color: rgba(251, 251, 251, 0.7);
+  margin-bottom: 15px;
 }
 .catalog-item {
   border: 1px solid rgba(12, 12, 12, 0.05);
@@ -103,7 +128,7 @@
   .catalog-list {
     margin-bottom: 40px;
   }
-  .catalog-item-hidden {
+  .catalog-card-hidden {
     display: none;
   }
 }
