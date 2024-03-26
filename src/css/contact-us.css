@@ -86,7 +86,7 @@
   text-align: center;
 }
 /* делаем цвет по ховеру */
-.container button:hover {
+.send-button:is(:hover, :focus) {
   background-color: #1f3cd4;
 }
 .contact-form-photo {
