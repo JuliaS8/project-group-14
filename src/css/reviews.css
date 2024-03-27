@@ -63,14 +63,14 @@
 }
 
 .reviews-swiper .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
 
   margin: 0 !important;
   border-radius: 50%;
   border: none;
   opacity: 1;
-  background-color: rgb(200, 205, 209);
+  background-color: #f3f3f3;
   transition: transform 250ms linear;
 }
 
