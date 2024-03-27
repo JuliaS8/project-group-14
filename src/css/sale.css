@@ -33,6 +33,14 @@
     height: 80px;
 }
 
+.clock-img-menu{
+    transition: transform 250ms linear;
+}
+
+.clock-item:hover .clock-img-menu{
+    transform: scale(1.2);
+}
+
 .front-clock-container{
     display: flex;
     justify-content: center;
