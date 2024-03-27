@@ -2,8 +2,6 @@ new Swiper('.reviews-swiper', {
   // кількість слайдів на сторінці
   slidesPerView: 1,
 
-  loop: true,
-
   // відступ між слайдами
   spaceBetween: 16,
 
