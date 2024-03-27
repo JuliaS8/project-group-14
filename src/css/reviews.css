@@ -8,17 +8,8 @@
   margin-bottom: 24px;
 }
 
-.swiper-wrapper {
+.reviews-swiper {
   overflow: hidden;
-}
-
-.reviews-list {
-  display: flex;
-  gap: 16px;
-}
-
-.swiper-slide {
-  max-width: 335px;
 }
 
 .reviews-item {
@@ -51,20 +42,7 @@
   text-align: center;
   color: rgba(12, 12, 12, 0.4);
 }
-/*=========
-@media screen and (max-width: 767px) {
-  .reviews-item:nth-child(2),
-  .reviews-item:last-child {
-    display: none;
-  }
-}
 
-@media screen and (max-width: 1279px) {
-  .reviews-item:last-child {
-    display: none;
-  }
-}
-=====*/
 @media screen and (min-width: 768px) {
   .reviews-title {
     font-size: 48px;
