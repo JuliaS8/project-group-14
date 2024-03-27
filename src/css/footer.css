@@ -298,6 +298,24 @@
     max-width: 768px;
     padding: 40px 32px 32px;
   }
+
+  .footer-tel {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+    
+  .tel {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+    
+  .footer-tel:hover {
+    cursor: pointer;
+    background-color: #fbfbfb;
+    color: #020202;
+  }
+    
+  .footer-tel:hover .tel {
+    color: #020202;
+  }
 }
 
 @media screen and (min-width: 1280px) {
