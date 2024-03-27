@@ -24,6 +24,7 @@ new Swiper('.reviews-swiper', {
     },
     1280: {
       slidesPerView: 3,
+      spaceBetween: 16,
     },
   },
 });
